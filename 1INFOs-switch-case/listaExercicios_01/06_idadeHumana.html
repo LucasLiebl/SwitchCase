@@ -1,0 +1,21 @@
+<meta charset="UTF-8" />
+<script>
+const idade = parseInt(prompt("Informe a idade"))
+const porte = prompt("Informe a porte, G- GRANDE M-MÉDIO P-PEQUENO").toUpperCase()   
+    // PROCESSAMENTO
+let resposta
+switch (porte) {
+    case "G":
+        resposta =  idade * 7
+        break;
+case "M":
+    resposta =  idade * 6
+    break;
+    default:
+        resposta = idade * 5
+        break;
+}
+    
+    // SAÍDA
+document.write(`${resposta} anos`)
+    </script>

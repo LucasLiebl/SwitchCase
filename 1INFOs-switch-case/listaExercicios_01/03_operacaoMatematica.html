@@ -1,0 +1,41 @@
+<script>
+    /*
+    //PROBLEMA: Faça um script que leia 2 números e em seguida pergunte ao usuário qual operação ele deseja realizar. O resultado da operação deve ser acompanhado de uma frase que diga se o número é:
+    - par ou ímpar;
+    - positivo ou negativo;
+    - inteiro ou decimal.
+    */
+
+    //ENTRADA
+const numero1 = Number(prompt("Informe o um numero"))
+const numero2 = Number(prompt("Informe o um numero"))
+const operacao = prompt("Informe a operação")
+    //PROCESSAMENTO
+let conceito
+    let resposta 
+switch (operacao) {
+    case "+": 
+        conceito = numero1 + numero2
+        resposta = conceito
+        break;
+case "-": 
+    conceito = numero1 - numero2  
+    resposta = conceito
+        break;
+    case "*": 
+        conceito = numero1 * numero2
+        resposta = conceito
+    break;
+    default: 
+        conceito = numero1 / numero2
+        resposta= conceito
+}
+switch (conceito % 2){
+case 0: resposta = resposta + " Par"
+break;
+default : resposta = resposta + " Ímpar"
+}
+    
+    //SAÍDA
+document.write(`${respostas}`)
+</script>
